@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12740cb3d45c478d90cf80162c92301a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+    
+            <style> #vega_4731de0241164fb8b9b75e8b68301be5 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_12740cb3d45c478d90cf80162c92301a" ></div>
+        
+</body>
+<script>    
+    
+            var map_12740cb3d45c478d90cf80162c92301a = L.map(
+                "map_12740cb3d45c478d90cf80162c92301a",
+                {
+                    center: [45.6427, 25.5887],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3a920e2efda468d9de13138e902b78a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var marker_47c5cf3272954fbdbaa8e3c748bdad22 = L.marker(
+                [45.6427, 25.5887],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+        var popup_7293a1bd23ea4c63a2235e226d726fa0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9a292f044b045cfbae0e760e7708445 = $(`<div id="html_a9a292f044b045cfbae0e760e7708445" style="width: 100.0%; height: 100.0%;"><strong>Locatia unu</strong></div>`)[0];
+            popup_7293a1bd23ea4c63a2235e226d726fa0.setContent(html_a9a292f044b045cfbae0e760e7708445);
+        
+
+        marker_47c5cf3272954fbdbaa8e3c748bdad22.bindPopup(popup_7293a1bd23ea4c63a2235e226d726fa0)
+        ;
+
+        
+    
+    
+            marker_47c5cf3272954fbdbaa8e3c748bdad22.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32a24010f19747ab853f98a66fd11993 = L.marker(
+                [44.9367, 26.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_e253db5d9afd46ba9e65dcafd09c17ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32a24010f19747ab853f98a66fd11993.setIcon(icon_e253db5d9afd46ba9e65dcafd09c17ef);
+        
+    
+        var popup_a287e6dc5aea40c99776eadbc7615644 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30bd68329690428baee82bf6531a63b8 = $(`<div id="html_30bd68329690428baee82bf6531a63b8" style="width: 100.0%; height: 100.0%;"><strong>Locatia doi</strong></div>`)[0];
+            popup_a287e6dc5aea40c99776eadbc7615644.setContent(html_30bd68329690428baee82bf6531a63b8);
+        
+
+        marker_32a24010f19747ab853f98a66fd11993.bindPopup(popup_a287e6dc5aea40c99776eadbc7615644)
+        ;
+
+        
+    
+    
+            marker_32a24010f19747ab853f98a66fd11993.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86dd4d24a9e943d1bd7a5ae1ed912371 = L.marker(
+                [46.7712, 23.6236],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_14976fc04e6b4adcb745f48153e83ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_86dd4d24a9e943d1bd7a5ae1ed912371.setIcon(icon_14976fc04e6b4adcb745f48153e83ad5);
+        
+    
+        var popup_c2a0896ca15e49108b013ae9f194f702 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb43e5f6e6684a33b73cda40a5cbcffc = $(`<div id="html_cb43e5f6e6684a33b73cda40a5cbcffc" style="width: 100.0%; height: 100.0%;"><strong>Locatia trei</strong></div>`)[0];
+            popup_c2a0896ca15e49108b013ae9f194f702.setContent(html_cb43e5f6e6684a33b73cda40a5cbcffc);
+        
+
+        marker_86dd4d24a9e943d1bd7a5ae1ed912371.bindPopup(popup_c2a0896ca15e49108b013ae9f194f702)
+        ;
+
+        
+    
+    
+            marker_86dd4d24a9e943d1bd7a5ae1ed912371.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee5efe2d22f549f294afd587ea683e8f = L.marker(
+                [47.1585, 27.6014],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_391a5bb07267478185ccb2fdbeb3ded5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ee5efe2d22f549f294afd587ea683e8f.setIcon(icon_391a5bb07267478185ccb2fdbeb3ded5);
+        
+    
+        var popup_a488dbb96fa24270a49ace2b2754c3e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a4378548ab7492bb5a2f70b66d27597 = $(`<div id="html_4a4378548ab7492bb5a2f70b66d27597" style="width: 100.0%; height: 100.0%;"><strong>Locatia patru</strong></div>`)[0];
+            popup_a488dbb96fa24270a49ace2b2754c3e1.setContent(html_4a4378548ab7492bb5a2f70b66d27597);
+        
+
+        marker_ee5efe2d22f549f294afd587ea683e8f.bindPopup(popup_a488dbb96fa24270a49ace2b2754c3e1)
+        ;
+
+        
+    
+    
+            marker_ee5efe2d22f549f294afd587ea683e8f.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b22d275d317c41d0b6e853e6779b6cb3 = L.marker(
+                [44.1598, 28.6348],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+        var custom_icon_ea77fe0623bf433da1ac190a140cb639 = L.icon({"iconSize": [50, 50], "iconUrl": "data:image/jpeg;base64,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"});
+        marker_b22d275d317c41d0b6e853e6779b6cb3.setIcon(custom_icon_ea77fe0623bf433da1ac190a140cb639);
+        
+    
+        var popup_deaf06e366bf4af88f47e971b489becf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3acb11bc411483599086fa1ddd0bd4e = $(`<div id="html_a3acb11bc411483599086fa1ddd0bd4e" style="width: 100.0%; height: 100.0%;"><strong>Locatia cinci</strong></div>`)[0];
+            popup_deaf06e366bf4af88f47e971b489becf.setContent(html_a3acb11bc411483599086fa1ddd0bd4e);
+        
+
+        marker_b22d275d317c41d0b6e853e6779b6cb3.bindPopup(popup_deaf06e366bf4af88f47e971b489becf)
+        ;
+
+        
+    
+    
+            marker_b22d275d317c41d0b6e853e6779b6cb3.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd5ea9aaf3db42ac909ab252b62c2024 = L.marker(
+                [32.7607, 16.9595],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+        var popup_dffee1e646144514b2bd39acbbd06a04 = L.popup({"maxWidth": 450});
+
+        
+            var vega_4731de0241164fb8b9b75e8b68301be5 = $(`             <div id="vega_4731de0241164fb8b9b75e8b68301be5"></div>             `)[0];
+            popup_dffee1e646144514b2bd39acbbd06a04.setContent(vega_4731de0241164fb8b9b75e8b68301be5);
+        
+
+        marker_bd5ea9aaf3db42ac909ab252b62c2024.bindPopup(popup_dffee1e646144514b2bd39acbbd06a04)
+        ;
+
+        
+            
+            vega_parse({"axes": [{"scale": "x", "title": "Time", "type": "x"}, {"scale": "y", "title": "Dominant Wave Period (s)", "type": "y"}], "data": [{"name": "table", "values": [{"col": "dominant_wave_period (s)", "idx": 1366257000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366260600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366264200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366267800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366271400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366275000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366278600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366282200000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366285800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366289400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366293000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366300200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366303800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366307400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366311000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366314600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366318200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366321800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366325400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366329000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366332600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366336200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366339800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366343400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366347000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366350600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366354200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366357800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366361400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366365000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366368600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366372200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366375800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366379400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366383000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366386600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366390200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366393800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366397400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366401000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366404600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366408200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366411800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366415400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366419000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366422600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366426200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366429800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366433400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366437000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366440600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366444200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366447800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366451400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366455000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366458600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366462200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366465800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366469400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366473000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366476600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366480200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366483800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366487400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366491000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366494600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366498200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366501800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366505400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366509000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366512600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366516200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366519800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366523400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366527000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366530600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366534200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366537800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366541400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366545000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366548600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366552200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366559400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366563000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366566600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366570200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366573800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366577400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366581000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366584600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366588200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366591800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366595400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366599000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366602600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366606200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366609800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366613400000, "val": 5}, {"col": "dominant_wave_period (s)", "idx": 1366617000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366620600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366624200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366627800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366631400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366635000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366638600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366642200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366645800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366649400000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366653000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366656600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366660200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366663800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366667400000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366671000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366674600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366678200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366681800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366685400000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366689000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366692600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366696200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366699800000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1366703400000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1366707000000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1366710600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366714200000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1366717800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366721400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366725000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366728600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366732200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366735800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366739400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366743000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1366746600000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1366750200000, "val": 12}, {"col": "dominant_wave_period (s)", "idx": 1366753800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366757400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366761000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366764600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366768200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366771800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366775400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366779000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366782600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366786200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366789800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366793400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366797000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366800600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366804200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366807800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366811400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366818600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366822200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366829400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366833000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366836600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366840200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366843800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366847400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366851000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366854600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366858200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366861800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366865400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366869000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366872600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366876200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1366879800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366883400000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366887000000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1366890600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1366894200000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366897800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366901400000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366905000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366908600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366912200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366915800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366919400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366923000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366926600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366930200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366933800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1366937400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366941000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366944600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366948200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366951800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366955400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366959000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366962600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366966200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366969800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366973400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366977000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1366980600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366984200000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366987800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366991400000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1366995000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1366998600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367002200000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367005800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367009400000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367013000000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367016600000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1367020200000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367023800000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367027400000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1367031000000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367034600000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367038200000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1367041800000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367045400000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367049000000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1367052600000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367056200000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367059800000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367063400000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367067000000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1367070600000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367077800000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367081400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367085000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367088600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367092200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367095800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367099400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367103000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367106600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367110200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367113800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367117400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367121000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367124600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367128200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367131800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367135400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367139000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367142600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367146200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367149800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367153400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367157000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367160600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367164200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367167800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367171400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367175000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367178600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367182200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367185800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367189400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367193000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367196600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367200200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367203800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367207400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367211000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367214600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367218200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367221800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367225400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367229000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367232600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367236200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367239800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367243400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367247000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367250600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367254200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367257800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367261400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367265000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367268600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367272200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367275800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367279400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367283000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367286600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367290200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367293800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367297400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367301000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367304600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367308200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367311800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367315400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367319000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367322600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367326200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367329800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367337000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367340600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367344200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367347800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367351400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367355000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367358600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367362200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367365800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367369400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367373000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367376600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367380200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367383800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367387400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367391000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367394600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367398200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367401800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367405400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367409000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367412600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367416200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367419800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367423400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367427000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367430600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367434200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367437800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367441400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367445000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367448600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367452200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367455800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367459400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367463000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367466600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367470200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367473800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367477400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367481000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367484600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367488200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367491800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367495400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367499000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367502600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367506200000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1367509800000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1367513400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367517000000, "val": 17}, {"col": "dominant_wave_period (s)", "idx": 1367520600000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1367524200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367527800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367531400000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367535000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367538600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367542200000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367545800000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1367549400000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1367553000000, "val": 5}, {"col": "dominant_wave_period (s)", "idx": 1367556600000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1367560200000, "val": 5}, {"col": "dominant_wave_period (s)", "idx": 1367563800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367571000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367574600000, "val": 5}, {"col": "dominant_wave_period (s)", "idx": 1367578200000, "val": 5}, {"col": "dominant_wave_period (s)", "idx": 1367581800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367585400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367589000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367592600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367596200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367599800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367603400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367607000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367610600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367614200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367617800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367621400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367625000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367628600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367632200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367635800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367639400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367643000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367646600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367650200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367653800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367657400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367661000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367664600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367668200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367671800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367675400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367679000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367682600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367686200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367689800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367693400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367697000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367700600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367704200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367707800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367711400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367715000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367718600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367722200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367725800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367729400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367733000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367736600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367740200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367743800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367747400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367751000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367754600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367758200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367761800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367765400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367769000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367772600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367776200000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367779800000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367783400000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367787000000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367790600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367794200000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1367797800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367801400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367805000000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367808600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367812200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367815800000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367819400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367823000000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367826600000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1367830200000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367833800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367837400000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367841000000, "val": 12}, {"col": "dominant_wave_period (s)", "idx": 1367844600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367848200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367851800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367855400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367859000000, "val": 12}, {"col": "dominant_wave_period (s)", "idx": 1367862600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367866200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1367869800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367873400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367877000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367880600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367884200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367887800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367891400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367895000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367898600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367902200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367905800000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367909400000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367913000000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367916600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1367920200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367923800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367927400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1367931000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1367934600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367938200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367941800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367945400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367949000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367952600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367956200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367959800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367963400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367967000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367970600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367974200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367977800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367981400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367985000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367988600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367992200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1367995800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1367999400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368003000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368006600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368010200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368013800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368017400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368021000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368024600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368028200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368031800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368035400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368039000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368042600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368046200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368049800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368053400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368057000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368060600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368064200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368067800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368071400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368075000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368078600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368082200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368085800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368089400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368093000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368096600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368100200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368103800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368107400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368111000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368114600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368118200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368121800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368125400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368129000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368132600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368136200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368139800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368143400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368147000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368150600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368154200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368157800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368161400000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368165000000, "val": 3}, {"col": "dominant_wave_period (s)", "idx": 1368168600000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1368172200000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1368175800000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1368179400000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1368183000000, "val": 3}, {"col": "dominant_wave_period (s)", "idx": 1368186600000, "val": 3}, {"col": "dominant_wave_period (s)", "idx": 1368190200000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368193800000, "val": 4}, {"col": "dominant_wave_period (s)", "idx": 1368197400000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1368201000000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368204600000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368208200000, "val": 5}, {"col": "dominant_wave_period (s)", "idx": 1368211800000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368215400000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368219000000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368222600000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368226200000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368229800000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1368233400000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368237000000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368240600000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368244200000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1368247800000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1368251400000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368255000000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368258600000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1368262200000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368265800000, "val": 14}, {"col": "dominant_wave_period (s)", "idx": 1368269400000, "val": 13}, {"col": "dominant_wave_period (s)", "idx": 1368273000000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1368276600000, "val": 16}, {"col": "dominant_wave_period (s)", "idx": 1368280200000, "val": 12}, {"col": "dominant_wave_period (s)", "idx": 1368283800000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1368287400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368291000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368294600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368298200000, "val": 15}, {"col": "dominant_wave_period (s)", "idx": 1368301800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368305400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368309000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368312600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368316200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368319800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368323400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368327000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368330600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368334200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368337800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368341400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368345000000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368348600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368352200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368355800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368359400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368363000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368366600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368370200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368373800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368377400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368381000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368384600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368388200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368391800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368395400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368399000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368402600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368406200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368409800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368413400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368417000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368420600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368424200000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368427800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368431400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368435000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368438600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368442200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368445800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368449400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368453000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368456600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368460200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368463800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368467400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368471000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368474600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368478200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368481800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368485400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368489000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368492600000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1368496200000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1368499800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368503400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368507000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368510600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368514200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368517800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368521400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368525000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368528600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368532200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368535800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368539400000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368543000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368546600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368550200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368553800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368557400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368561000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368564600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368568200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368571800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368575400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368579000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368582600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368586200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368589800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368593400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368597000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368600600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368604200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368607800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368611400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368615000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368618600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368622200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368625800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368629400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368633000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368636600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368640200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368643800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368647400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368651000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368654600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368658200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368665400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368669000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368672600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368676200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368679800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368683400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368687000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368690600000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368694200000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1368697800000, "val": 7}, {"col": "dominant_wave_period (s)", "idx": 1368701400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368705000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368708600000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368712200000, "val": 6}, {"col": "dominant_wave_period (s)", "idx": 1368715800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368719400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368723000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368726600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368730200000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368733800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368737400000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368741000000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368744600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368748200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368751800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368755400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368759000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368762600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368766200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368769800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368773400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368777000000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368780600000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368784200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368787800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368791400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368795000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368798600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368802200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368805800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368809400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368813000000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368816600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368820200000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368823800000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368827400000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368831000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368834600000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368838200000, "val": 11}, {"col": "dominant_wave_period (s)", "idx": 1368841800000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368845400000, "val": 10}, {"col": "dominant_wave_period (s)", "idx": 1368849000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368852600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368856200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368859800000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368863400000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368867000000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368870600000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368874200000, "val": 9}, {"col": "dominant_wave_period (s)", "idx": 1368877800000, "val": 8}, {"col": "dominant_wave_period (s)", "idx": 1368881400000, "val": 9}]}], "height": 200, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"stroke": {"field": "data.col", "scale": "color"}, "strokeWidth": {"value": 2}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "data.val", "scale": "y"}}}, "type": "line"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "range": "width", "type": "time"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 400},vega_4731de0241164fb8b9b75e8b68301be5);
+            
+        
+    
+    
+            var marker_25a0d25d494c49cd8a8f125d471cbb09 = L.marker(
+                [44.3546, 20.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_3924fcd998e744d286fe2fe92b53b4b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25a0d25d494c49cd8a8f125d471cbb09.setIcon(icon_3924fcd998e744d286fe2fe92b53b4b6);
+        
+    
+        var popup_b256b792fab44f1cad05cf7a1efad318 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b767d83c3d204491b0ffc5282fd43d58 = $(`<div id="html_b767d83c3d204491b0ffc5282fd43d58" style="width: 100.0%; height: 100.0%;"><strong>Locatia 6</strong></div>`)[0];
+            popup_b256b792fab44f1cad05cf7a1efad318.setContent(html_b767d83c3d204491b0ffc5282fd43d58);
+        
+
+        marker_25a0d25d494c49cd8a8f125d471cbb09.bindPopup(popup_b256b792fab44f1cad05cf7a1efad318)
+        ;
+
+        
+    
+    
+            marker_25a0d25d494c49cd8a8f125d471cbb09.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81b985bb889a4d40a288e750ce2fb653 = L.marker(
+                [24.9367, 76.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_df79850e0a9645a7b752dc9988eac56a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81b985bb889a4d40a288e750ce2fb653.setIcon(icon_df79850e0a9645a7b752dc9988eac56a);
+        
+    
+        var popup_e5a836f9536446f98a8fdc8ee0d1f183 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1248c2b3fe9f4184b29786afa112a039 = $(`<div id="html_1248c2b3fe9f4184b29786afa112a039" style="width: 100.0%; height: 100.0%;"><strong>Locatia 7</strong></div>`)[0];
+            popup_e5a836f9536446f98a8fdc8ee0d1f183.setContent(html_1248c2b3fe9f4184b29786afa112a039);
+        
+
+        marker_81b985bb889a4d40a288e750ce2fb653.bindPopup(popup_e5a836f9536446f98a8fdc8ee0d1f183)
+        ;
+
+        
+    
+    
+            marker_81b985bb889a4d40a288e750ce2fb653.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aeaf14b136664a1e8feca126cc23ed40 = L.marker(
+                [44.9367, -26.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_97818d6ca5294058b6eca112571b26c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aeaf14b136664a1e8feca126cc23ed40.setIcon(icon_97818d6ca5294058b6eca112571b26c9);
+        
+    
+        var popup_1fed22d866bc48cc8ce7be3502bf17a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d54f9d6e5b5940d79c08a543c6c5e3a6 = $(`<div id="html_d54f9d6e5b5940d79c08a543c6c5e3a6" style="width: 100.0%; height: 100.0%;"><strong>Locatia 8</strong></div>`)[0];
+            popup_1fed22d866bc48cc8ce7be3502bf17a8.setContent(html_d54f9d6e5b5940d79c08a543c6c5e3a6);
+        
+
+        marker_aeaf14b136664a1e8feca126cc23ed40.bindPopup(popup_1fed22d866bc48cc8ce7be3502bf17a8)
+        ;
+
+        
+    
+    
+            marker_aeaf14b136664a1e8feca126cc23ed40.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_533666f2f9a94f8393d02faba34eeff4 = L.marker(
+                [14.9367, -26.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_fd808cb5d1464c498acee574f0fc5b09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_533666f2f9a94f8393d02faba34eeff4.setIcon(icon_fd808cb5d1464c498acee574f0fc5b09);
+        
+    
+        var popup_7b48a4a96d95483c88f4ccd72e9c4b90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f65ec507d6d04dab9443de1c74b8b217 = $(`<div id="html_f65ec507d6d04dab9443de1c74b8b217" style="width: 100.0%; height: 100.0%;"><strong>Locatia 9</strong></div>`)[0];
+            popup_7b48a4a96d95483c88f4ccd72e9c4b90.setContent(html_f65ec507d6d04dab9443de1c74b8b217);
+        
+
+        marker_533666f2f9a94f8393d02faba34eeff4.bindPopup(popup_7b48a4a96d95483c88f4ccd72e9c4b90)
+        ;
+
+        
+    
+    
+            marker_533666f2f9a94f8393d02faba34eeff4.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b32ed645828344dc9471ccaa5de88305 = L.marker(
+                [94.9367, -26.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_fbc474eaf8f44b11b2b7699232c647f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b32ed645828344dc9471ccaa5de88305.setIcon(icon_fbc474eaf8f44b11b2b7699232c647f3);
+        
+    
+        var popup_628d779b92974b02ad6c2d3431e4a567 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed35f978c1f24b6da8ef59192fbaea53 = $(`<div id="html_ed35f978c1f24b6da8ef59192fbaea53" style="width: 100.0%; height: 100.0%;"><strong>Locatia 10</strong></div>`)[0];
+            popup_628d779b92974b02ad6c2d3431e4a567.setContent(html_ed35f978c1f24b6da8ef59192fbaea53);
+        
+
+        marker_b32ed645828344dc9471ccaa5de88305.bindPopup(popup_628d779b92974b02ad6c2d3431e4a567)
+        ;
+
+        
+    
+    
+            marker_b32ed645828344dc9471ccaa5de88305.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd829898ac014cbeb5a5edb346f8e68d = L.marker(
+                [49.9367, 16.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_febbe218e58e4d9bac58bf6b355f21ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd829898ac014cbeb5a5edb346f8e68d.setIcon(icon_febbe218e58e4d9bac58bf6b355f21ee);
+        
+    
+        var popup_076f382e1b5c4f4181049743e9e49d96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f82bac4bd35a44edaddc921251346554 = $(`<div id="html_f82bac4bd35a44edaddc921251346554" style="width: 100.0%; height: 100.0%;"><strong>Locatia 11</strong></div>`)[0];
+            popup_076f382e1b5c4f4181049743e9e49d96.setContent(html_f82bac4bd35a44edaddc921251346554);
+        
+
+        marker_fd829898ac014cbeb5a5edb346f8e68d.bindPopup(popup_076f382e1b5c4f4181049743e9e49d96)
+        ;
+
+        
+    
+    
+            marker_fd829898ac014cbeb5a5edb346f8e68d.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d054f5b46d96412cb8e3fb333343d167 = L.marker(
+                [4.9367, -26.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_14d92c2a99f24d52b6db5c8983671dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d054f5b46d96412cb8e3fb333343d167.setIcon(icon_14d92c2a99f24d52b6db5c8983671dc7);
+        
+    
+        var popup_065c3f90765844a78c2184964082a12c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84a727aa647e49ef9ffbd3292a94b698 = $(`<div id="html_84a727aa647e49ef9ffbd3292a94b698" style="width: 100.0%; height: 100.0%;"><strong>Locatia 12</strong></div>`)[0];
+            popup_065c3f90765844a78c2184964082a12c.setContent(html_84a727aa647e49ef9ffbd3292a94b698);
+        
+
+        marker_d054f5b46d96412cb8e3fb333343d167.bindPopup(popup_065c3f90765844a78c2184964082a12c)
+        ;
+
+        
+    
+    
+            marker_d054f5b46d96412cb8e3fb333343d167.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94c369c797b24588b2857aece4f56218 = L.marker(
+                [-44.9367, 6.0129],
+                {}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+            var icon_c3ec9bd4a9764aff829dcf7daa8a0d0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94c369c797b24588b2857aece4f56218.setIcon(icon_c3ec9bd4a9764aff829dcf7daa8a0d0a);
+        
+    
+        var popup_783096bb52b34109a49598046fa34414 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff88c4f1cf0e4104acc928c31e250e32 = $(`<div id="html_ff88c4f1cf0e4104acc928c31e250e32" style="width: 100.0%; height: 100.0%;"><strong>Locatia 13</strong></div>`)[0];
+            popup_783096bb52b34109a49598046fa34414.setContent(html_ff88c4f1cf0e4104acc928c31e250e32);
+        
+
+        marker_94c369c797b24588b2857aece4f56218.bindPopup(popup_783096bb52b34109a49598046fa34414)
+        ;
+
+        
+    
+    
+            marker_94c369c797b24588b2857aece4f56218.bindTooltip(
+                `<div>
+                     Click Pentru Mai Multe Informatii
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b164ec45a6634b14b99ca0e4f4ebf0a7 = L.circleMarker(
+                [50.5039, 4.4699],
+                {"bubblingMouseEvents": true, "color": "#428bca", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#428bca", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_12740cb3d45c478d90cf80162c92301a);
+        
+    
+        var popup_cfc12ee3c41a4e1e8e2200ecbf744b05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a02b29d03bf9471bb16340fd59db9d6e = $(`<div id="html_a02b29d03bf9471bb16340fd59db9d6e" style="width: 100.0%; height: 100.0%;">Vacanta</div>`)[0];
+            popup_cfc12ee3c41a4e1e8e2200ecbf744b05.setContent(html_a02b29d03bf9471bb16340fd59db9d6e);
+        
+
+        circle_marker_b164ec45a6634b14b99ca0e4f4ebf0a7.bindPopup(popup_cfc12ee3c41a4e1e8e2200ecbf744b05)
+        ;
+
+        
+    
+    
+
+        function geo_json_598407e76419489fb7a31321082945a4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_598407e76419489fb7a31321082945a4 = L.geoJson(null, {
+                onEachFeature: geo_json_598407e76419489fb7a31321082945a4_onEachFeature,
+            
+        });
+
+        function geo_json_598407e76419489fb7a31321082945a4_add (data) {
+            geo_json_598407e76419489fb7a31321082945a4
+                .addData(data)
+                .addTo(map_12740cb3d45c478d90cf80162c92301a);
+        }
+            geo_json_598407e76419489fb7a31321082945a4_add({"features": [{"geometry": {"coordinates": [[[25.257568359375, 45.857499316676666], [25.01861572265625, 45.84410779560204], [25.309753417968746, 45.44086267178177], [25.90850830078125, 45.49672163945861], [25.900268554687496, 45.84028105450088], [25.257568359375, 45.857499316676666]]], "type": "Polygon"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+</script>
